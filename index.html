@@ -4,17 +4,106 @@
 	<title>Blog project</title>
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="node_modules/angular-material/angular-material.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
     <body ng-app="YourApp">
 		
+		<div class="wrap" style="text-align: center;">
+			<div layout>
+				<div flex>
+					
+					<div layout="column" layout-align="center center">
+						<div flex="auto">
+							<h1>Intro text</h1>
+							<button>Discover more</button>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
 		
-	<md-button class="md-raised md-primary">Primary</md-button>
-
-    <div ng-controller="YourController">
+		<div class="wrap">
+			<div layout>
+				
+				<div flex="30">
+					<aside>
+						
+						<nav role="navigation">
+							<ul>
+								<li><a href="#">Articles</a></li>
+								<li><a href="#">Gallery</a></li>
+							</ul>
+							<ul>
+								<li><a href="#">About</a></li>
+								<li><a href="#">Contact</a></li>
+							</ul>
+							<ul>
+								<li><a href="#">Facebook</a></li>
+								<li><a href="#">Instagram</a></li>
+							</ul>
+						</nav>
+						
+						<div class="search">
+							Search input
+						</div>
+						
+					</aside>
+				</div>
+				
+				<div flex>
+					
+					<article>
+						<header>
+							<h3>Article's title</h3>
+							<time datetime="2016-01-15T19:00">15 February 2016</time>
+							<address>Cluj-Napoca, Romania</address>
+						</header>
+						<div class="content">
+							Image or gallery
+							<p>Lorem ipsum sit dolor amen consecvetur this is the excerpt of the article</p>
+						</div>
+						<footer>
+							Read more
+							Like, Share
+						</footer>
+					</article>
+					
+				</div>
+				
+			</div>	
+		</div>
 		
-		<md-button class="md-raised md-primary">Primary</md-button>
+		<!--
+		
+		Intro<br><br>
+		
+		Content<br>
+		- sidebar<br>
+		- content<br>
+		-- articles<br>
+		-- pagination - spinner<br>
+		<br>
+		
+		<br>
+		<br>
+		Structure:<br>
+		Articles<br>
+		Gallery<br>
+		About<br>
+		Contact<br>
+		Archive<br>
+		
+		<br>
+		<br>
+		<br>
+		(gulp watch less : autocompile and minify less files)
 
-    </div>
+		-->
+
+		<div ng-controller="YourController">
+
+		</div>
 
     <script src="node_modules/angular/angular.js"></script>
     <script src="node_modules/angular-aria/angular-aria.js"></script>

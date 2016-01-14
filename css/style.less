@@ -1,0 +1,44 @@
+@import "../common/css/config.less";
+
+body {
+	font-size: 14px;
+	
+	* {
+		box-sizing: border-box;
+	}	
+}
+
+
+
+.wrap {
+	position: relative;
+	margin: 0 auto;
+	max-width: 1000px;
+}
+
+
+
+
+
+
+
+
+
+
+article {
+	position: relative;
+	
+	> header {
+		background: green;
+	}
+	
+	> .content {
+		position: relative;
+		overflow: auto;
+		background: purple;
+	}
+	
+	> footer {
+		background: yellow;
+	}
+}
